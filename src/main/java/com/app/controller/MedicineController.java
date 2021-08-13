@@ -21,7 +21,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController()
-@CrossOrigin(origins = { "http://localhost:8989" })
+@CrossOrigin(origins= {"*"})
 @Api(value = "Medicine Controller", description = "This is a Medicine Controller API, you can get, create, update and delete medicine.")
 public class MedicineController {
 

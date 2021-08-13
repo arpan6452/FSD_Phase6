@@ -36,7 +36,7 @@ pipeline {
             steps {
                 echo '----------------- This is a docker deploment phase ----------'
                 bat '''                 
-					docker container run --restart always --name ecom-webservice -p 8081:8081 -d ecom-webservice
+					docker container run --restart always --name ecom-webservice -p 8081:8081 --link mysql-standalone:mysql -d ecom-webservice
 				'''
             }
         }

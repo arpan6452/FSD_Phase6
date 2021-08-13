@@ -34,7 +34,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins= {"http://localhost:8989", "http://localhost:9876"})
+@CrossOrigin(origins= {"*"})
 @Api(value="User Controller", description="This is a User Controller API, you can register and login as an admin/password.")
 public class UserController {
 	

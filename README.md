@@ -1,2 +1,2 @@
 # FSD_Phase6
-E2E Project
+E2E Simplilearn Project
